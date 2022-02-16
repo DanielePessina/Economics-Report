@@ -1,0 +1,79 @@
+\documentclass[a4paper, twoside, 12pt]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{natbib} 
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=0pt]{geometry}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+%\usepackage[paper=portrait,pagesize]{typearea}
+%\usepackage{rotating}
+
+%% Useful packages for figures and tables
+\usepackage{amsmath}
+\usepackage{mhchem}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
+\usepackage{float}
+\usepackage{adjustbox}
+
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{tabularx}
+\usepackage{pdfpages}
+
+%\usepackage[table,xcdraw]{xcolor}
+
+%Sart of the document 
+\begin{document}
+
+\begin{titlepage}
+\includepdf[pages=-]{Cover pages/Cover Pages pdf/Cover Page - ECONOMICS.pdf}
+\end{titlepage}
+
+
+\pagenumbering{roman}
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+
+\input{A. Main Report/1. Business Strategy}
+\input{A. Main Report/2. Financial Strategy}
+\input{A. Main Report/3. Key Assumptions}
+\input{A. Main Report/4. CAPEX}
+\input{A. Main Report/5. OPEX}
+\input{A. Main Report/6. CAPEX and OPEX breakdown}
+\input{A. Main Report/7. Economics Analysis}
+\input{A. Main Report/8. Sensitivity Analysis}
+\input{A. Main Report/9. Scenario Analysis}
+\input{A. Main Report/10. Conclusion}
+\input{A. Main Report/11. Outlook and Rec}
+
+
+\appendix
+%\input{B. Appendix/Stream Tables}
+%\input{B. Appendix/1. MCDM Methods}
+%\input{B. Appendix/2. Process Synthesis}
+%\input{B. Appendix/3. Heat Integration}
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{b}
+
+\begin{titlepage}
+\includepdf[pages=-]{Cover pages/Cover Pages pdf/Back Page.pdf}
+\end{titlepage}
+
+\end{document}
+
+
